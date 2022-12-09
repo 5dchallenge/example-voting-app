@@ -13,7 +13,7 @@ services:
         context: ./vote
         dockerfile: Dockerfile
       ports:
-        - 80
+        - 5001:80
       networks:
         - vote
       depends_on:
@@ -43,7 +43,7 @@ services:
     results:
       image: schoolofdevops/vote-result
       ports:
-        - 5001:80
+        - 5002:80
       depends_on:
         - db
       networks:
