@@ -10,8 +10,8 @@ services:
     vote:
       image: schoolofdevops/vote:dev
       build: 
-        context: .
-        dockerfile: vote/Dockerfile
+        context: ./vote
+        dockerfile: Dockerfile
       ports:
         - 80
       networks:
